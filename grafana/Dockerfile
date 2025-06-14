@@ -55,7 +55,7 @@ RUN \
         && grafana-cli plugins install "grafana-image-renderer" "${GRAFANA_IMAGE_RENDERER_VERSION#v}"; \
     fi \
     \
-    && grafana-cli plugins install "victoriametrics-metrics-datasource" "${VICTORIAMETRICS_DATASOURCE_VERSION#v}"; \
+    && grafana-cli plugins install "victoriametrics-metrics-datasource" "${VICTORIAMETRICS_DATASOURCE_VERSION#v}" \
     \
     && rm -fr \
         /tmp/* \
