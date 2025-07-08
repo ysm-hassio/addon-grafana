@@ -42,6 +42,7 @@ insights to your home.
 ## Fork Information
 
 This repository is a fork maintained independently with the following additions:
+
 - VictoriaMetrics datasource plugin integration
 
 **Note**: Changes made in this fork are not intended to be merged back to the original repository.
