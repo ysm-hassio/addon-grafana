@@ -14,9 +14,6 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-[![Discord][discord-shield]][discord]
-[![Community Forum][forum-shield]][forum]
-
 The open platform for beautiful analytics and monitoring with VictoriaMetrics datasource support.
 
 ![Grafana in the Home Assistant Frontend](images/screenshot.png)
@@ -55,16 +52,7 @@ This repository is a fork maintained independently with the following additions:
 
 Got questions?
 
-You have several options to get them answered:
-
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
-  support and feature requests.
-- The [Home Assistant Discord chat server][discord-ha] for general Home
-  Assistant discussions and questions.
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
-
-You could also [open an issue here][issue] GitHub.
+You could [open an issue here][issue] GitHub.
 
 ## Contributing
 
@@ -118,12 +106,7 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/ysm-hassio/addon-grafana.svg
 [commits]: https://github.com/ysm-hassio/addon-grafana/commits/main
 [contributors]: https://github.com/ysm-hassio/addon-grafana/graphs/contributors
-[discord-ha]: https://discord.gg/c5DvZ4e
-[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
-[discord]: https://discord.me/hassioaddons
 [docs]: https://github.com/ysm-hassio/addon-grafana/blob/main/grafana/DOCS.md
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-grafana/54674?u=frenck
 [frenck]: https://github.com/frenck
 [github-actions-shield]: https://github.com/ysm-hassio/addon-grafana/workflows/CI/badge.svg
 [github-actions]: https://github.com/ysm-hassio/addon-grafana/actions
