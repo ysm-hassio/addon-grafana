@@ -4,7 +4,6 @@ version: dev
 slug: grafana
 description: The open platform for beautiful analytics and monitoring
 url: https://github.com/ysm-hassio/addon-grafana
-codenotary: 4yury.m@gmail.com
 startup: services
 ingress: true
 ingress_port: 1337
