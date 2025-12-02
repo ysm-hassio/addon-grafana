@@ -6,9 +6,6 @@
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports armhf Architecture][armhf-shield]
-![Supports armv7 Architecture][armv7-shield]
-![Supports i386 Architecture][i386-shield]
 
 [![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
@@ -101,8 +98,6 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [commits-shield]: https://img.shields.io/github/commit-activity/y/ysm-hassio/addon-grafana.svg
 [commits]: https://github.com/ysm-hassio/addon-grafana/commits/main
 [contributors]: https://github.com/ysm-hassio/addon-grafana/graphs/contributors
@@ -110,7 +105,6 @@ SOFTWARE.
 [frenck]: https://github.com/frenck
 [github-actions-shield]: https://github.com/ysm-hassio/addon-grafana/workflows/CI/badge.svg
 [github-actions]: https://github.com/ysm-hassio/addon-grafana/actions
-[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [issue]: https://github.com/ysm-hassio/addon-grafana/issues
 [license-shield]: https://img.shields.io/github/license/ysm-hassio/addon-grafana.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
