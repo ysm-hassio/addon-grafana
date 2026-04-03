@@ -8,7 +8,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base system
 ARG BUILD_ARCH=amd64
 ARG GRAFANA_VERSION="v12.4.2"
-ARG GRAFANA_IMAGE_RENDERER_VERSION="v5.7.3"
 ARG VICTORIAMETRICS_DATASOURCE_VERSION="v0.23.3"
 RUN \
     ARCH="${BUILD_ARCH}" \
@@ -26,33 +25,6 @@ RUN \
         nginx=1.26.3-3+deb13u2 \
     \
     && dpkg --install /tmp/grafana.deb \
-    \
-    && if [ "${BUILD_ARCH}" = "amd64" ]; then \
-        apt-get install -y --no-install-recommends \
-            libasound2t64=1.2.14-1 \
-            libcups2t64=2.4.10-3+deb13u1 \
-            libdbus-1-3=1.16.2-2 \
-            libdrm-amdgpu1=2.4.124-2 \
-            libgbm1=25.0.7-2 \
-            libglib2.0-0t64=2.84.4-3~deb13u2 \
-            libgtk-4-1=4.18.6+ds-2 \
-            libnss3=2:3.110-1+deb13u1 \
-            libx11-6=2:1.8.12-1 \
-            libx11-xcb1=2:1.8.12-1 \
-            libxcb-dri3-0=1.17.0-2+b1 \
-            libxcomposite1=1:0.4.6-1 \
-            libxcursor1=1:1.2.3-1 \
-            libxdamage1=1:1.1.6-1+b2 \
-            libxext6=2:1.3.4-1+b3 \
-            libxfixes3=1:6.0.0-2+b4 \
-            libxi6=2:1.8.2-1 \
-            libxrandr2=2:1.5.4-1+b3 \
-            libxrender1=1:0.9.12-1 \
-            libxshmfence1=1.3.3-1 \
-            libxss1=1:1.2.3-1+b3 \
-            libxtst6=2:1.2.5-1 \
-        && grafana-cli plugins install "grafana-image-renderer" "${GRAFANA_IMAGE_RENDERER_VERSION#v}"; \
-    fi \
     \
     && grafana-cli plugins install "victoriametrics-metrics-datasource" "${VICTORIAMETRICS_DATASOURCE_VERSION#v}" \
     \
