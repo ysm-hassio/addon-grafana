@@ -25,8 +25,12 @@
         "\\s\\s(?<package>[a-z0-9][a-z0-9-]+)=(?<currentValue>[a-z0-9-:_+~.]+)\\s+"
       ],
       "versioningTemplate": "deb",
-      "datasourceTemplate": "repology",
-      "depNameTemplate": "debian_13/{{package}}"
+    "datasourceTemplate": "apt",
+    "depNameTemplate": "{{package}}",
+    "registryUrls": [
+      "http://deb.debian.org/debian/dists/bookworm/main/binary-amd64/Packages",
+      "http://security.debian.org/debian-security/dists/bookworm-security/main/binary-amd64/Packages"
+    ]
     },
     {
       "customType": "regex",
@@ -58,23 +62,17 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["repology"],
-      "automerge": true
-    },
-    {
       "groupName": "Add-on base image",
       "matchDatasources": ["docker"]
     },
     {
       "groupName": "Add-on base image",
       "matchDatasources": ["docker"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "matchUpdateTypes": ["minor", "patch"]
     },
     {
       "matchDatasources": ["github-releases"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "matchUpdateTypes": ["minor", "patch"]
     }
   ]
 }
