@@ -58,17 +58,23 @@
   ],
   "packageRules": [
     {
+      "matchDatasources": ["repology"],
+      "automerge": true
+    },
+    {
       "groupName": "Add-on base image",
       "matchDatasources": ["docker"]
     },
     {
       "groupName": "Add-on base image",
       "matchDatasources": ["docker"],
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
     },
     {
       "matchDatasources": ["github-releases"],
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
     }
   ]
 }
