@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base system
 ARG BUILD_ARCH=amd64
 ARG GRAFANA_VERSION="v12.4.3"
-ARG VICTORIAMETRICS_DATASOURCE_VERSION="v0.23.4"
+ARG VICTORIAMETRICS_DATASOURCE_VERSION="v0.24.0"
 RUN \
     ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
